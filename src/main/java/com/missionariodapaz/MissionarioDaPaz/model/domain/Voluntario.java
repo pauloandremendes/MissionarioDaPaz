@@ -1,12 +1,11 @@
 package com.missionariodapaz.MissionarioDaPaz.model.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
+@Table(name = "voluntario")
 public class Voluntario implements Serializable {
 
     @Id
@@ -24,6 +23,9 @@ public class Voluntario implements Serializable {
     private String district;
 
     private String city;
+
+//    @OneToMany(mappedBy = "voluntario")
+//    private List<NovoMembro> novoMembro;
 
     public long getId() {
         return id;
@@ -80,4 +82,12 @@ public class Voluntario implements Serializable {
     public void setCity(String city) {
         this.city = city;
     }
+
+//    public List<NovoMembro> getNovoMembro() {
+//        return novoMembro;
+//    }
+
+//    public void setNovosMembros(List<NovoMembro> novoMembro) {
+//        this.novoMembro = novoMembro;
+//    }
 }
