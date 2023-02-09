@@ -1,9 +1,7 @@
 package com.missionariodapaz.MissionarioDaPaz.service;
 
 import com.missionariodapaz.MissionarioDaPaz.model.domain.NovoMembro;
-import com.missionariodapaz.MissionarioDaPaz.model.domain.Voluntario;
 import com.missionariodapaz.MissionarioDaPaz.repository.NovoMembroRepository;
-import com.missionariodapaz.MissionarioDaPaz.repository.VoluntarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
